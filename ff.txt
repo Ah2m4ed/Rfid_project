@@ -1,0 +1,5 @@
+avrdude
+avrdude -p m32 -c usbasp -t
+d hfuse 0x99
+w hfuse 0 0xc9
+w lfuse 0 0xff

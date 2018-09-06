@@ -1,0 +1,419 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA_POWER
+   (shape (circ TOP 127000 0 0))
+   (shape (circ I1 127000 0 0))
+   (shape (circ I2 127000 0 0))
+   (shape (circ I3 127000 0 0))
+   (shape (circ I4 127000 0 0))
+   (shape (circ I5 127000 0 0))
+   (shape (circ I6 127000 0 0))
+   (shape (circ I7 127000 0 0))
+   (shape (circ I8 127000 0 0))
+   (shape (circ I9 127000 0 0))
+   (shape (circ I10 127000 0 0))
+   (shape (circ I11 127000 0 0))
+   (shape (circ I12 127000 0 0))
+   (shape (circ I13 127000 0 0))
+   (shape (circ I14 127000 0 0))
+   (shape (circ BOT 127000 0 0))
+  )
+  (padstack $VIA_SIGNAL
+   (shape (circ TOP 127000 0 0))
+   (shape (circ I1 127000 0 0))
+   (shape (circ I2 127000 0 0))
+   (shape (circ I3 127000 0 0))
+   (shape (circ I4 127000 0 0))
+   (shape (circ I5 127000 0 0))
+   (shape (circ I6 127000 0 0))
+   (shape (circ I7 127000 0 0))
+   (shape (circ I8 127000 0 0))
+   (shape (circ I9 127000 0 0))
+   (shape (circ I10 127000 0 0))
+   (shape (circ I11 127000 0 0))
+   (shape (circ I12 127000 0 0))
+   (shape (circ I13 127000 0 0))
+   (shape (circ I14 127000 0 0))
+   (shape (circ BOT 127000 0 0))
+  )
+  )
+  (network_out
+   (Net #00002 
+   (rule
+   )
+   (wire (path TOP 30480  -11900000 350000 -11900000 1016000 -3742000 1016000
+     -3742000 1200000)
+    (connect (terminal pin J3-0) (terminal pin U1-2))
+   )
+   )
+   (Net #00008 
+   (rule
+   )
+   (wire (path TOP 30480  -7650000 2150000 -7429500 2150000 -7429500 1587500
+     -2218000 1587500 -2218000 1200000)
+    (connect (terminal pin J5-0) (terminal pin U1-8))
+   )
+   (wire (path BOT 30480  -2218000 1200000 -2218000 -1079500 -2384000 -1079500
+     -2384000 -1350000)
+    (connect (terminal pin U1-8) (terminal pin G-1))
+   )
+   )
+   (Net #00009 
+   (rule
+   )
+   (wire (path TOP 30480  -2292000 -3400000 -2603500 -3400000 -2603500 -3619500
+     -3048000 -3619500 -3048000 -850000 -5342000 -850000)
+    (connect (terminal pin X1-1) (terminal pin C2-1))
+   )
+   (wire (path BOT 30480  -2292000 -3400000 -2292000 -2777602 -1651000 -2777602
+     -1651000 -970198 -1456000 -970198 -1456000 1200000)
+    (connect (terminal pin X1-1) (terminal pin U1-11))
+   )
+   )
+   (Net #00010 
+   (rule
+   )
+   (wire (path TOP 30480  -2800000 -3400000 -2800000 -3020538 -1492000 -3020538
+     -1492000 -2100000)
+    (connect (terminal pin X1-0) (terminal pin C1-1))
+   )
+   (wire (path BOT 30480  -1492000 -2100000 -1202000 -2100000 -1202000 1200000)
+    (connect (terminal pin C1-1) (terminal pin U1-12))
+   )
+   )
+   (Net #00013 
+   (rule
+   )
+   (wire (path TOP 30480  1270000 1397000 -440000 1397000 -440000 1200000)
+    (connect (terminal via) (terminal pin U1-15))
+   )
+   (wire (path BOT 30480  1270000 1397000 1270000 1206500 1300000 1206500
+     1300000 -2650000)
+    (connect (terminal via) (terminal pin J2-0))
+   )
+   (wire (path TOP 30480  3616000 1200000 3302000 1200000 3302000 1397000
+     1270000 1397000)
+    (connect (terminal pin R1-1) (terminal via))
+   )
+   (via $VIA_SIGNAL 1270000 1397000)
+   )
+   (Net #00014 
+   (rule
+   )
+   (wire (path BOT 30480  -186000 1200000 -186000 1016000 829781 1016000
+     829781 1729070 1420000 1729070 1420000 4500000)
+    (connect (terminal pin U1-16) (terminal pin LCD1-5))
+   )
+   )
+   (Net #00015 
+   (rule
+   )
+   (wire (path BOT 30480  912000 4500000 912000 3635565 190500 3635565
+     190500 1460500 68000 1460500 68000 1200000)
+    (connect (terminal pin LCD1-3) (terminal pin U1-17))
+   )
+   )
+   (Net #00018 
+   (rule
+   )
+   (wire (path BOT 30480  1166000 4500000 1166000 2984500 576000 2984500
+     576000 2724000)
+    (connect (terminal pin LCD1-4) (terminal pin U1-20))
+   )
+   )
+   (Net #00019 
+   (rule
+   )
+   (wire (path BOT 30480  1651000 2921000 1674000 2921000 1674000 4500000)
+    (connect (terminal via) (terminal pin LCD1-6))
+   )
+   (wire (path TOP 30480  317500 2921000 1651000 2921000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 30480  322000 2724000 322000 2921000 317500 2921000)
+    (connect (terminal pin U1-21) (terminal via))
+   )
+   (via $VIA_SIGNAL 1651000 2921000)
+   (via $VIA_SIGNAL 317500 2921000)
+   )
+   (Net #00020 
+   (rule
+   )
+   (wire (path TOP 30480  1674000 4754000 1905000 4754000 1905000 3780153
+     68000 3780153 68000 2724000)
+    (connect (terminal pin LCD1-7) (terminal pin U1-22))
+   )
+   )
+   (Net #00021 
+   (rule
+   )
+   (wire (path BOT 30480  -186000 2724000 -186000 2603500 -571500 2603500
+     -571500 5080000 1420000 5080000 1420000 4754000)
+    (connect (terminal pin U1-23) (terminal pin LCD1-8))
+   )
+   )
+   (Net #00022 
+   (rule
+   )
+   (wire (path BOT 30480  -440000 2724000 -440000 4953000 1166000 4953000
+     1166000 4754000)
+    (connect (terminal pin U1-24) (terminal pin LCD1-9))
+   )
+   )
+   (Net #00023 
+   (rule
+   )
+   (wire (path TOP 30480  -694000 2724000 -694000 2540000 -1333500 2540000
+     -1333500 5080000 912000 5080000 912000 4754000)
+    (connect (terminal pin U1-25) (terminal pin LCD1-10))
+   )
+   )
+   (Net #00024 
+   (rule
+   )
+   (wire (path BOT 30480  -317500 2984500 -317500 4896680 571639 4896680
+     571639 4754000 658000 4754000)
+    (connect (terminal via) (terminal pin LCD1-11))
+   )
+   (wire (path TOP 30480  -889000 2984500 -317500 2984500)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 30480  -948000 2724000 -948000 2984500 -889000 2984500)
+    (connect (terminal pin U1-26) (terminal via))
+   )
+   (via $VIA_SIGNAL -317500 2984500)
+   (via $VIA_SIGNAL -889000 2984500)
+   )
+   (Net #00025 
+   (rule
+   )
+   (wire (path TOP 30480  -1202000 2724000 -1202000 4953000 404000 4953000
+     404000 4754000)
+    (connect (terminal pin U1-27) (terminal pin LCD1-12))
+   )
+   )
+   (Net #00026 
+   (rule
+   )
+   (wire (path BOT 30480  150000 4754000 -63500 4754000 -63500 2476500
+     -1456000 2476500 -1456000 2724000)
+    (connect (terminal pin LCD1-13) (terminal pin U1-28))
+   )
+   )
+   (Net #00027 
+   (rule
+   )
+   (wire (path BOT 30480  -2900000 4100000 -2900000 3810000 -2472000 3810000
+     -2472000 2724000)
+    (connect (terminal pin R2-0) (terminal pin U1-32))
+   )
+   )
+   (Net #00033 
+   (rule
+   )
+   (wire (path BOT 30480  -2950000 4700000 -3996000 4700000 -3996000 2724000)
+    (connect (terminal pin D1-0) (terminal pin U1-38))
+   )
+   )
+   (Net #00034 
+   (rule
+   )
+   (wire (path BOT 30480  -5150000 4800000 -5150000 2724000 -4250000 2724000)
+    (connect (terminal pin D2-0) (terminal pin U1-39))
+   )
+   )
+   (Net #00041 
+   (rule
+   )
+   (wire (path TOP 30480  -9950000 1800000 -9652000 1800000 -9652000 1587500
+     -8184000 1587500 -8184000 2950000)
+    (connect (terminal pin JFVB-0) (terminal pin AH-1))
+   )
+   (wire (path BOT 30480  -9650000 -1438000 -9650000 1524000 -9950000 1524000
+     -9950000 1800000)
+    (connect (terminal pin U2-7) (terminal pin JFVB-0))
+   )
+   (wire (path TOP 30480  -9650000 -1438000 -9650000 -1968500 -8888000 -1968500
+     -8888000 -2200000)
+    (connect (terminal pin U2-7) (terminal pin U2-3))
+   )
+   )
+   (Net #00042 
+   (rule
+   )
+   (wire (path TOP 30480  -6700000 -2650000 -6700000 -1775841 -9142000 -1775841
+     -9142000 -1438000)
+    (connect (terminal pin WLMD-0) (terminal pin U2-5))
+   )
+   (wire (path BOT 30480  -9884000 3200000 -9884000 2921000 -9396000 2921000
+     -9396000 -1438000)
+    (connect (terminal pin KDN-1) (terminal pin U2-6))
+   )
+   (wire (path TOP 30480  -9142000 -1438000 -9396000 -1438000)
+    (connect (terminal pin U2-5) (terminal pin U2-6))
+   )
+   )
+   (Net #00043 
+   (rule
+   )
+   (wire (path TOP 30480  -1587500 -381000 -1587500 -352944 -9525000 -352944
+     -9525000 -1905000 -8699500 -1905000 -8699500 -2349500 -9142000 -2349500
+     -9142000 -2200000)
+    (connect (terminal via) (terminal pin U2-2))
+   )
+   (wire (path BOT 30480  -1884000 4100000 -1587500 4100000 -1587500 -381000)
+    (connect (terminal pin R2-1) (terminal via))
+   )
+   (via $VIA_SIGNAL -1587500 -381000)
+   )
+   (Net #00044 
+   (rule
+   )
+   (wire (path BOT 30480  -9200000 2950000 -9200000 4850000 -7750000 4850000)
+    (connect (terminal pin AH-0) (terminal pin J4-0))
+   )
+   (wire (path BOT 30480  -9200000 2950000 -9200000 2701121 -9271000 2701121
+     -9271000 -1968500 -9396000 -1968500 -9396000 -2200000)
+    (connect (terminal pin AH-0) (terminal pin U2-1))
+   )
+   )
+   (Net #00046 
+   (rule
+   )
+   (wire (path TOP 30480  -10900000 3200000 -10900000 2443028 -9207500 2443028
+     -9207500 1800000 -8934000 1800000)
+    (connect (terminal pin KDN-0) (terminal pin JFVB-1))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 30480  -6192000 -2650000 -3892000 -2650000 -3892000 -4900000)
+    (connect (terminal pin WLMD-1) (terminal pin J1-1))
+   )
+   (wire (path BOT 30480  -9650000 -2200000 -11392000 -2200000 -11392000 350000)
+    (connect (terminal pin U2-0) (terminal pin J3-1))
+   )
+   (wire (path BOT 30480  -5850000 -850000 -5850000 2150000 -7142000 2150000)
+    (connect (terminal pin C2-0) (terminal pin J5-1))
+   )
+   (wire (path BOT 30480  -6192000 -2650000 -6477000 -2650000 -6477000 -2476500
+     -9650000 -2476500 -9650000 -2200000)
+    (connect (terminal pin WLMD-1) (terminal pin U2-0))
+   )
+   (wire (path BOT 30480  -1710000 1200000 -1710000 -1841500 -2000000 -1841500
+     -2000000 -2100000)
+    (connect (terminal pin U1-10) (terminal pin C1-0))
+   )
+   (wire (path BOT 30480  -6192000 -2650000 -6192000 -2349500 -5850000 -2349500
+     -5850000 -850000)
+    (connect (terminal pin WLMD-1) (terminal pin C2-0))
+   )
+   (wire (path BOT 30480  -1964000 2724000 -1964000 2489913 -1710000 2489913
+     -1710000 1200000)
+    (connect (terminal pin U1-30) (terminal pin U1-10))
+   )
+   (wire (path BOT 30480  -7142000 2150000 -7142000 2476500 -7366000 2476500
+     -7366000 4127500 -7242000 4127500 -7242000 4850000)
+    (connect (terminal pin J5-1) (terminal pin J4-1))
+   )
+   (wire (path BOT 30480  -2095500 4445000 -2095500 2984500 -1964000 2984500
+     -1964000 2724000)
+    (connect (terminal wire) (terminal pin U1-30))
+   )
+   (wire (path TOP 30480  -4896000 4800000 -4572000 4800000 -4572000 4445000
+     -2696000 4445000 -2696000 4700000)
+    (connect (terminal pin D2-1) (terminal pin D1-1))
+   )
+   (wire (path TOP 30480  -7242000 4850000 -7242000 5143500 -4896000 5143500
+     -4896000 4800000)
+    (connect (terminal pin J4-1) (terminal pin D2-1))
+   )
+   (wire (path BOT 30480  -2696000 4700000 -2696000 4445000 -2095500 4445000)
+    (connect (terminal pin D1-1) (terminal wire))
+   )
+   (wire (path BOT 30480  150000 4500000 150000 4254500 658000 4254500
+     658000 4500000)
+    (connect (terminal pin LCD1-0) (terminal pin LCD1-2))
+   )
+   (wire (path TOP 30480  -1710000 1200000 -1710000 952500 2286000 952500
+     2286000 1200000 2600000 1200000)
+    (connect (terminal pin U1-10) (terminal pin R1-0))
+   )
+   (wire (path TOP 30480  -825500 4445000 -847598 4445000 -847598 4500000
+     150000 4500000)
+    (connect (terminal via) (terminal pin LCD1-0))
+   )
+   (wire (path BOT 30480  -2095500 4445000 -825500 4445000)
+    (connect (terminal wire) (terminal via))
+   )
+   (via $VIA_POWER -825500 4445000)
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path TOP 30480  404000 4500000 404000 4254500 -63500 4254500
+     -63500 2178309 -1964000 2178309 -1964000 1200000)
+    (connect (terminal pin LCD1-1) (terminal pin U1-9))
+   )
+   (wire (path TOP 30480  -1968500 -1524000 1808000 -1524000 1808000 -2650000)
+    (connect (terminal via) (terminal pin J2-1))
+   )
+   (wire (path BOT 30480  -1968500 -1524000 -2159000 -1524000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path BOT 30480  -3400000 -1524000 -4400000 -1524000 -4400000 -4900000)
+    (connect (terminal wire) (terminal pin J1-0))
+   )
+   (wire (path BOT 30480  -2159000 -1524000 -3400000 -1524000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 30480  -1964000 1200000 -1964000 -1524000 -1968500 -1524000)
+    (connect (terminal pin U1-9) (terminal via))
+   )
+   (wire (path BOT 30480  -3400000 -1524000 -3400000 -1350000)
+    (connect (terminal wire) (terminal pin G-0))
+   )
+   (via $VIA_POWER -1968500 -1524000)
+   )
+  )
+ )
